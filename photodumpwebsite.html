@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tentang Fia - Photo Dump</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background: url('background6.jpg') no-repeat center center fixed;
+            background-size: cover;
+            color: #333;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        .photo-content {
+            max-width: 1200px;
+            background: rgba(255, 255, 255, 0.92);
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+        }
+        .photo-content h2 {
+            text-align: center;
+            color: saddlebrown;
+            margin-bottom: 40px;
+            font-size: 2.8em;
+        }
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+        .polaroid {
+            background: white;
+            padding: 15px 15px 50px 15px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+            transform: rotate(var(--rotate, 0deg));
+            transition: transform 0.3s ease;
+            max-width: 320px;
+            margin: 0 auto;
+        }
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.05);
+            z-index: 10;
+        }
+        .polaroid img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border: 1px solid #ddd;
+        }
+        .polaroid-caption {
+            margin-top: 20px;
+            font-size: 1.1em;
+            color: saddlebrown;
+            font-weight: 600;
+            font-style: italic;
+        }
+        
+        .photo-grid > div:nth-child(odd) { --rotate: -3deg; }
+        .photo-grid > div:nth-child(even) { --rotate: 3deg; }
+        .photo-grid > div:nth-child(3n) { --rotate: 2deg; }
+        .photo-grid > div:nth-child(5n) { --rotate: -4deg; }
+        .music {
+            margin: 25px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 8px;
+            background-color: palegoldenrod;
+            border-top: 2px solid saddlebrown;
+            font-size: 14px;
+            color: saddlebrown;
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="music">
+        <audio controls autoplay loop>
+            <source src="audio/background_music3.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <main>
+        <div class="photo-content">
+            <h2>My Photo Dump</h2>
+            <p style="font-size: 1.2em; margin-bottom: 40px;">
+                Welcome to my Photo dump!
+            </p>
+
+            <div class="photo-grid">
+                <div class="polaroid">
+                    <img src="gambar1.jpg" alt="Gambar 1">
+                </div>
+
+               
+                <div class="polaroid">
+                    <img src="gambar2.jpg" alt="Gambar 2">
+                </div>
+
+                
+                <div class="polaroid">
+                    <img src="gambar3.jpg" alt="Gambar 3">
+                </div>
+
+                
+                <div class="polaroid">
+                    <img src="gambar4.jpg" alt="Gambar 4">
+                </div>
+
+                <div class="polaroid">
+                    <img src="gambar5.jpg" alt="Gambar 5">
+                </div>
+
+                
+                <div class="polaroid">
+                    <img src="gambar6.jpg" alt="Gambar 6">
+                </div>
+
+              
+                <div class="polaroid">
+                    <img src="gambar7.jpg" alt="Gambar 7">
+                </div>
+
+                <div class="polaroid">
+                    <img src="gambar8.jpg" alt="Gambar 8">
+                </div>
+
+                
+                <div class="polaroid">
+                    <img src="gambar9.jpg" alt="Gambar 9">
+                </div>
+
+                
+                <div class="polaroid">
+                    <img src="gambar10.jpg" alt="Gambar 10">
+                </div>
+
+                
+                <div class="polaroid">
+                    <img src="gambar11.jpg" alt="Gambar 11">
+                </div>
+
+                
+                <div class="polaroid">
+                    <img src="gambar12.jpg" alt="Gambar 12">
+                </div>
+
+                
+                <div class="polaroid">
+                    <img src="gambar13.jpg" alt="Gambar 13">
+                </div>
+
+                
+                <div class="polaroid">
+                    <img src="gambar14.jpg" alt="Gambar 14">
+                </div>
+
+                
+                <div class="polaroid">
+                    <img src="gambar15.jpg" alt="Gambar 15">
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 This Website is for educational purposes only | Fia Zulkifli</p>
+    </footer>
+
+</body>
+</html>
