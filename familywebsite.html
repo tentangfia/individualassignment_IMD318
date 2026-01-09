@@ -19,6 +19,35 @@
             background-size: cover;
             color: #333;
         }
+
+
+        .home-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            z-index: 1000;
+        }
+
+        .home-button a {
+            display: inline-block;
+            background-color: saddlebrown; 
+            color: white;
+            font-weight: 600;
+            font-size: 1.1rem;
+            padding: 12px 20px;
+            border-radius: 15px;
+            text-decoration: none;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.3s ease;
+        }
+
+        .home-button a:hover {
+            background-color: palegoldenrod;
+            color: saddlebrown;
+            transform: translateY(-3px);
+        }
+
+        
         main {
             flex: 1;
             display: flex;
@@ -109,6 +138,12 @@
     
 </head>
 <body>
+
+
+	<div class="home-button">
+        <a href="index.html">← Home</a> 
+    </div>
+
 
     <div class="music">
         <audio controls autoplay loop>
