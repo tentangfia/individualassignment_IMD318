@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tentang Fia - About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            background-image: url('background5.jpg');
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+        .about-container {
+            max-width: 900px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+            text-align: left;
+        }
+        .about-container h2 {
+            text-align: center;
+            color: saddlebrown;
+            margin-bottom: 30px;
+        }
+        .profile-section {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .profile-img img {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 6px solid saddlebrown;
+            object-fit: cover;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        .profile-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .interests-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+        .interest-item {
+            background: palegoldenrod;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid saddlebrown;
+            text-align: center;
+        }
+        .interest-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        .music {
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 8px;
+            background-color: palegoldenrod;
+            border-top: 2px solid saddlebrown;
+            font-size: 14px;
+            color: saddlebrown;
+        }
+        @media (max-width: 768px) {
+            .profile-section {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+    
+</head>
+<body>
+
+    <div class="music">
+        <audio controls autoplay loop>
+            <source src="audio/background_music.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    </div>
+
+    <main>
+        <div class="about-container">
+            <h2>A glimpse of Fia</h2>
+
+            <div class="profile-section">
+                <div class="profile-img">
+                    <img src="gambar14.jpg" alt="Fia's picture">
+                </div>
+
+                <div class="profile-text">
+                    <p>Hi, my Name is <strong>Nur Safiah Zulkifli</strong>, but I am known as <strong>Fia</strong>.</p>
+                    <p>I am from Kelantan and currently studying in <strong>UiTM Kelantan, kampus Machang and majoring on Information Management.</strong></p>
+                    <p>I really love writing poems, wearing traditional attire & listening to Accoustical music</p>
+                </div>
+            </div>
+
+            <h2 style="text-align: center;">My Hobby & Interest</h2>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <img src="poem.jpg" alt="Writing Poems">
+                    <p><strong>Web Development</strong><br>Membina website seperti ini seronok sangat!</p>
+                </div>
+
+                <div class="interest-item">
+                    <img src="bundle1.jpg" alt="Preloved">
+                    <p><strong>Preloved Shop</strong><br>I love vintage items and buy my clothes at Preloved Shop or Vintage Store</p>
+                </div>
+
+                <div class="interest-item">
+                    <img src="reading.jpg" alt="Reading">
+                    <p><strong>Reading</strong><br>Reading novel & poems are my biggest hobby</p>
+                </div>
+
+                <div class="interest-item">
+                    <img src="sunset.jpg" alt="photography">
+                    <p><strong>photography</strong><br>I am in love with taking pictures of the sunset</p>
+                </div>
+
+                <div class="interest-item">
+                    <img src="emcee.jpg" alt="Emcee">
+                    <p><strong>Emcee</strong><br>Being an emcee on event or talking infront of crowds are my interests</p>
+                </div>
+            </div>
+
+           
+        </div>
+    </main>
+
+    <script>
+        alert("Assalamualaikum and welcome to Fia's Webpage! \nLet's get to know me more.")
+    </script>
+
+    <footer>
+        <p>&copy; 2026 This Website is for educational purposes only | Fia Zulkifli</p>
+    </footer>
+
+</body>
+</html>
