@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tentang Fia - Home</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 
 	<style>
@@ -25,7 +26,10 @@
 		header{
    			text-align: center;
     		padding: 15px;
-    		background-color: palegoldenrod; 
+    		background-image: url("background16.jpg"); 
+    		background-position: center;
+    		background-size: cover;
+    		background-repeat: no-repeat;
     		border-bottom: 2px solid saddlebrown;
     		color: saddlebrown; 
     		font-size: 18px;
@@ -85,12 +89,79 @@
             text-align: center;
         }
 
-        .btn-group {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1.2rem;
-            justify-content: center;
-        }
+        .biodata {
+    		background-image: url("background16.jpg");
+    		padding: 30px;
+    		border-radius: 25px;
+    		box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    		max-width: 600px;
+    		width: 90%;
+    		margin: 20px 0;
+		}
+
+		.biodata img {
+    		width: 180px;
+    		height: 180px;
+   		 	border-radius: 50%;
+    		border: 5px solid saddlebrown;
+    		object-fit: cover;
+    		margin-bottom: 20px;
+    		box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+		}
+
+		.biodata h2 {
+    		color: saddlebrown;
+    		margin-bottom: 15px;
+		}
+
+		.biodata p {
+    		font-size: 1.1rem;
+    		color: #444;
+    		margin-bottom: 25px;
+		}
+
+		.social-buttons {
+    		display: flex;
+    		gap: 20px;
+    		justify-content: center;
+    		flex-wrap: wrap;
+		}
+
+		.social-btn {
+    		display: inline-flex;
+    		align-items: center;
+    		gap: 10px;
+    		padding: 12px 24px;
+    		border-radius: 30px;
+    		font-weight: 600;
+    		text-decoration: none;
+    		transition: all 0.3s ease;
+    		box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+		}
+
+		.instagram {
+    		background-color: #E4405F;
+    		color: white;
+		}
+
+		.instagram:hover {
+    		background-color: #C13554;
+    		transform: translateY(-3px);
+		}
+
+		.tiktok {
+    		background-color: #000000;
+    		color: white;
+		}
+
+		.tiktok:hover {
+    		background-color: #333333;
+    		transform: translateY(-3px);
+		}
+
+		.social-btn i {
+    		font-size: 1.4rem;
+		}
 
 
         .music {
@@ -105,6 +176,18 @@
     		font-size: 14px;
     		color: saddlebrown;
  			}
+
+ 		@media (max-width: 768px) {
+    	.biodata img {
+       		width: 150px;
+        	height: 150px;
+    	}
+    	.social-buttons {
+        	flex-direction: column;
+        	align-items: center;
+    	}
+		}
+
 	</style>
 
 
@@ -139,6 +222,22 @@
     </div>
 
 <main>
+	<div class="biodata">
+        <img src="gambar16.jpg" alt="Nur Safiah Zulkifli (Fia)">
+        <h2>Tentang Si Dara</h2>
+        <p><strong>Nur Safiah Zulkifli</strong><br>
+           "Tentang seorang gadis dan seisinya"<br>
+           "Menurutmu apa yang bisa dicinta dari diriku? - Nadin Amizah"</p>
+        
+        <div class="social-buttons">
+            <a href="https://www.instagram.com/tentangfia" target="_blank" class="social-btn instagram">
+                <i class="fab fa-instagram"></i> Instagram
+            </a>
+            <a href="https://www.tiktok.com/@tentangfia" target="_blank" class="social-btn tiktok">
+                <i class="fab fa-tiktok"></i> TikTok
+            </a>
+        </div>
+    </div>
 	
 </main>
 
